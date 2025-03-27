@@ -1,4 +1,4 @@
-name: 部署 Honkit to GitHub Pages
+name: Deploy Honkit to GitHub Pages
 
 on:
   push:
@@ -29,4 +29,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_book
-        
