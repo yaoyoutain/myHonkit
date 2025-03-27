@@ -1,5 +1,22 @@
 {
   "devDependencies": {
     "honkit": "^6.0.2"
+  },
+  "scripts": {
+    "build": "npx honkit build",
+    "serve": "npx honkit serve",
+    "book": "npx honkit init",
+    "pdf": "npx honkit pdf"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-flexible-alerts": "^1.0.4",
+    "gitbook-plugin-get-pdf": "^0.0.1",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1"
   }
 }

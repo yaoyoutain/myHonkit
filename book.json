@@ -1,0 +1,44 @@
+{
+    "title": "我的文档",
+    "language": "zh-hans",
+    "author": "",
+    "description": "",
+    "plugins": [
+        "expandable-chapters-small",
+        "chapter-fold",
+        "get-pdf",
+        "code",
+        "search-pro",
+        "tbfed-pagefooter",
+        "flexible-alerts",
+        "anchor-navigation-ex",
+        "github"
+    ],
+    "pluginsConfig": {
+        "get-pdf": {
+            "base": "/summary/assets",
+            "prefix": "book",
+            "label": "下载 PDF"
+        },
+        "code": {
+            "copyButtons": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "©2025 瑾语",
+            "modify_label": "该文档修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "showGoTop": true,
+            "isRewritePageTitle": true,
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+        "github": {
+            "url": "https://github.com/yaoyoutain"
+        }
+    }
+}
