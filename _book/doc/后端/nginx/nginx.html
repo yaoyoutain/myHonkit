@@ -1,0 +1,1015 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>nginx · 我的文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/honkit-plugin-todo/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../前端/前端.html" />
+    
+    
+    <link rel="prev" href="../git/git.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../honkit/安装.html">
+            
+                <a href="../../honkit/安装.html">
+            
+                    
+                    honkit安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../honkit/插件.html">
+            
+                <a href="../../honkit/插件.html">
+            
+                    
+                    honkit插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../honkit/插件使用.html">
+            
+                <a href="../../honkit/插件使用.html">
+            
+                    
+                    honkit插件使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../后端.html">
+            
+                <a href="../后端.html">
+            
+                    
+                    后端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mysql/mysql.html">
+            
+                <a href="../mysql/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../go/go.html">
+            
+                <a href="../go/go.html">
+            
+                    
+                    go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../net/net.md">
+            
+                <span>
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../git/git.html">
+            
+                <a href="../git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../前端/前端.html">
+            
+                <a href="../../前端/前端.html">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../前端/html/html.html">
+            
+                <a href="../../前端/html/html.html">
+            
+                    
+                    html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../前端/css/css.html">
+            
+                <a href="../../前端/css/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../前端/js/js.html">
+            
+                <a href="../../前端/js/js.html">
+            
+                    
+                    js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../前端/ts/ts.html">
+            
+                <a href="../../前端/ts/ts.html">
+            
+                    
+                    ts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../前端/vue/vue.html">
+            
+                <a href="../../前端/vue/vue.html">
+            
+                    
+                    vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../前端/项目工程/项目工程.html">
+            
+                <a href="../../前端/项目工程/项目工程.html">
+            
+                    
+                    项目工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../前端/element/element.html">
+            
+                <a href="../../前端/element/element.html">
+            
+                    
+                    element
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >nginx</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nginx"><b></b>nginx</a></li><ul><li><span class="title-icon "></span><a href="#目录"><b></b>目录</a></li><li><span class="title-icon "></span><a href="#简介"><b></b>简介</a></li><li><span class="title-icon "></span><a href="#核心文件路径"><b></b>核心文件路径</a></li><li><span class="title-icon "></span><a href="#关键字"><b></b>关键字</a></li><li><span class="title-icon "></span><a href="#安装"><b></b>安装</a></li><ul><li><span class="title-icon "></span><a href="#windows"><b></b>windows</a></li><li><span class="title-icon "></span><a href="#liunx"><b></b>liunx</a></li><li><span class="title-icon "></span><a href="#docker"><b></b>docker</a></li></ul><li><span class="title-icon "></span><a href="#命令"><b></b>命令</a></li><li><span class="title-icon "></span><a href="#配置文件结构"><b></b>配置文件结构</a></li><li><span class="title-icon "></span><a href="#负载均衡策略"><b></b>负载均衡策略</a></li><ul><li><span class="title-icon "></span><a href="#轮询"><b></b>轮询</a></li><li><span class="title-icon "></span><a href="#加权轮询"><b></b>加权轮询</a></li><li><span class="title-icon "></span><a href="#最少链接"><b></b>最少链接</a></li><li><span class="title-icon "></span><a href="#加权最少链接"><b></b>加权最少链接</a></li><li><span class="title-icon "></span><a href="#iphash-"><b></b>ip_hash </a></li><li><span class="title-icon "></span><a href="#普通hash"><b></b>普通hash</a></li></ul><li><span class="title-icon "></span><a href="#应用"><b></b>应用</a></li><ul><li><span class="title-icon "></span><a href="#静态站点"><b></b>静态站点</a></li><li><span class="title-icon "></span><a href="#文件服务器"><b></b>文件服务器</a></li></ul><li><span class="title-icon "></span><a href="#vscode-配置"><b></b>vscode 配置</a></li></ul></ul></div><a href="#nginx" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nginx"><a name="nginx" class="anchor-navigation-ex-anchor" href="#nginx"><i class="fa fa-link" aria-hidden="true"></i></a>nginx</h1>
+<h2 id="目录"><a name="目录" class="anchor-navigation-ex-anchor" href="#目录"><i class="fa fa-link" aria-hidden="true"></i></a>目录</h2>
+<ul>
+<li><a href="#简介">简介</a></li>
+<li><a href="#核心文件路径">核心文件路径</a></li>
+<li><a href="#关键字">关键字</a></li>
+<li><a href="#安装">安装</a><ul>
+<li><a href="#windows">windows</a></li>
+<li><a href="#liunx">liunx</a></li>
+<li><a href="#docker">docker</a></li>
+</ul>
+</li>
+<li><a href="#命令">命令</a></li>
+<li><a href="#配置文件结构">配置文件结构</a></li>
+<li><a href="#负载均衡策略">负载均衡策略</a><ul>
+<li><a href="#轮询">轮询</a></li>
+<li><a href="#加权轮询">加权轮询</a></li>
+<li><a href="#最少链接">最少链接</a></li>
+<li><a href="#加权最少链接">加权最少链接</a></li>
+<li><a href="#ip_hash-">ip_hash </a></li>
+<li><a href="#普通hash">普通hash</a></li>
+</ul>
+</li>
+<li><a href="#应用">应用</a><ul>
+<li><a href="#静态站点">静态站点</a></li>
+<li><a href="#文件服务器">文件服务器</a></li>
+</ul>
+</li>
+<li><a href="#vscode-配置">vscode 配置</a></li>
+</ul>
+<h2 id="简介"><a name="简介" class="anchor-navigation-ex-anchor" href="#简介"><i class="fa fa-link" aria-hidden="true"></i></a>简介</h2>
+<blockquote>
+<p>nginx [engine x] 是一个 HTTP 和反向代理服务器， 邮件代理服务器， 和一个通用的 TCP/UDP 代理服务器， 最初由<a href="http://sysoev.ru/en/" title="伊戈尔·西索耶夫" target="_blank">伊戈尔·西索耶夫</a>撰写。</p>
+</blockquote>
+<ol>
+<li>基本的 HTTP 服务器功能</li>
+<li>其他http服务器功能</li>
+<li>邮件代理服务器功能</li>
+<li>TCP/UDP代理服务器功能</li>
+<li>体系结构和可伸缩性</li>
+</ol>
+<h2 id="核心文件路径"><a name="核心文件路径" class="anchor-navigation-ex-anchor" href="#核心文件路径"><i class="fa fa-link" aria-hidden="true"></i></a>核心文件路径</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># 配置文件存放目录</span>
+/etc/nginx
+
+<span class="hljs-comment"># 主配置文件</span>
+/etc/nginx/conf.d
+
+<span class="hljs-comment"># 程序默认存放位置</span>
+/usr/share/nginx/html
+
+<span class="hljs-comment"># 日志默认位置</span>
+/var/log/nginx
+</code></pre>
+<p><a href="https://nginx.org/en/" title=" nginx  https://nginx.org/en/" target="_blank"> nginx  https://nginx.org/en/</a></p>
+<h2 id="关键字"><a name="关键字" class="anchor-navigation-ex-anchor" href="#关键字"><i class="fa fa-link" aria-hidden="true"></i></a>关键字</h2>
+<blockquote>
+<p>正向代理， 反向代理， </p>
+<p>负载均衡： 轮询，加权轮重，ip hash</p>
+<p>动静分离</p>
+</blockquote>
+<p><img src="image/image_Ooj-3n0qkn.png" alt=""></img></p>
+<h2 id="安装"><a name="安装" class="anchor-navigation-ex-anchor" href="#安装"><i class="fa fa-link" aria-hidden="true"></i></a>安装</h2>
+<p><a href="https://nginx.org/en/download.html" title=" nginx: download  https://nginx.org/en/download.html" target="_blank"> nginx: download  https://nginx.org/en/download.html</a></p>
+<h3 id="windows"><a name="windows" class="anchor-navigation-ex-anchor" href="#windows"><i class="fa fa-link" aria-hidden="true"></i></a>windows</h3>
+<p><a href="file/nginx-1.22.1_eQuAS-xpN-.zip" title="nginx-1.22.1.zip">nginx-1.22.1.zip</a></p>
+<h3 id="liunx"><a name="liunx" class="anchor-navigation-ex-anchor" href="#liunx"><i class="fa fa-link" aria-hidden="true"></i></a>liunx</h3>
+<h3 id="docker"><a name="docker" class="anchor-navigation-ex-anchor" href="#docker"><i class="fa fa-link" aria-hidden="true"></i></a>docker</h3>
+<p><img src="image/image_Fp1oHJVl5G.png" alt=""></img></p>
+<pre><code class="lang-nginx"><span class="hljs-comment"># ./conf.d 文件夹下创建default.conf</span>
+
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span>       <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">listen</span>  [::]:<span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span>  localhost;
+
+    <span class="hljs-section">location</span> / {
+        <span class="hljs-attribute">root</span>   /usr/share/nginx/html;
+        <span class="hljs-attribute">index</span>  index.html index.htm;
+    }
+
+
+    <span class="hljs-attribute">error_page</span>   <span class="hljs-number">500</span> <span class="hljs-number">502</span> <span class="hljs-number">503</span> <span class="hljs-number">504</span>  /50x.html;
+    <span class="hljs-section">location</span> = /50x.html {
+        <span class="hljs-attribute">root</span>   /usr/share/nginx/html;
+    }
+}
+</code></pre>
+<pre><code class="lang-yaml"><span class="hljs-attr">version:</span> <span class="hljs-string">'3'</span>
+
+<span class="hljs-attr">services:</span>
+  <span class="hljs-attr">myNginx:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">nginx:latest</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./conf.d:/etc/nginx/conf.d</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./html:/usr/share/nginx/html</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./log:/var/log/nginx</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">myNginx</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-number">80</span><span class="hljs-string">:80</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">always</span>
+</code></pre>
+<h2 id="命令"><a name="命令" class="anchor-navigation-ex-anchor" href="#命令"><i class="fa fa-link" aria-hidden="true"></i></a>命令</h2>
+<pre><code class="lang-batch">nginx               启动
+nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。
+nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。
+nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。
+nginx -s reopen     重新打开日志文件。
+nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。
+nginx -t            不运行，仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。
+nginx -v            显示 nginx 的版本。
+nginx -V            显示 nginx 的版本，编译器版本和配置参数。
+</code></pre>
+<h2 id="配置文件结构"><a name="配置文件结构" class="anchor-navigation-ex-anchor" href="#配置文件结构"><i class="fa fa-link" aria-hidden="true"></i></a>配置文件结构</h2>
+<pre><code class="lang-nginx">全局配置
+
+<span class="hljs-section">events</span> {
+    <span class="hljs-attribute">worker_connections</span>  <span class="hljs-number">1024</span>;
+}
+
+<span class="hljs-section">http</span> {
+  <span class="hljs-attribute">http</span> 配置
+
+  upstream xx{
+    <span class="hljs-attribute">server</span> ip weight=<span class="hljs-number">1</span>(权重);
+    //负载均衡 ： 服务器资源
+  }
+
+  <span class="hljs-section">server</span> {
+        <span class="hljs-attribute">listen</span>       <span class="hljs-number">8080</span>;
+        <span class="hljs-attribute">server_name</span>  localhost;
+        //代理
+        <span class="hljs-section">location</span> / {
+            <span class="hljs-attribute">root</span>   html;
+            <span class="hljs-attribute">index</span>  index.html index.htm;
+            <span class="hljs-attribute">proxy_pass</span>  协议+xx;
+        }
+  }
+
+  <span class="hljs-section">server</span> {
+        <span class="hljs-attribute">listen</span>       <span class="hljs-number">8080</span>;
+        <span class="hljs-attribute">server_name</span>  localhost;
+        //代理
+        <span class="hljs-section">location</span> / {
+            <span class="hljs-attribute">root</span>   html;
+            <span class="hljs-attribute">index</span>  index.html index.htm;
+            <span class="hljs-attribute">proxy_pass</span>  协议+xx;
+        }
+  }
+}
+</code></pre>
+<p>示例</p>
+<pre><code class="lang-nginx"><span class="hljs-comment">#运行用户</span>
+<span class="hljs-comment">#user  nobody;</span>
+
+<span class="hljs-comment">#启动进程,通常设置成和cpu的数量相等</span>
+<span class="hljs-attribute">worker_processes</span>  <span class="hljs-number">1</span>;
+
+<span class="hljs-comment">#启动进程,通常设置成和cpu的数量相等</span>
+<span class="hljs-comment">#error_log  logs/error.log;</span>
+<span class="hljs-comment">#error_log  logs/error.log  notice;</span>
+<span class="hljs-comment">#error_log  logs/error.log  info;</span>
+
+<span class="hljs-comment">#PID文件，记录当前启动的nginx的进程ID</span>
+<span class="hljs-comment">#pid        logs/nginx.pid;</span>
+
+<span class="hljs-comment">#工作模式及连接数上限</span>
+<span class="hljs-section">events</span> {
+    <span class="hljs-attribute">worker_connections</span>  <span class="hljs-number">1024</span>;<span class="hljs-comment">#单个后台worker process进程的最大并发链接数</span>
+}
+
+<span class="hljs-comment">#设定http服务器，利用它的反向代理功能提供负载均衡支持</span>
+<span class="hljs-section">http</span> {
+    <span class="hljs-comment">#设定mime类型(邮件支持类型),类型由mime.types文件定义</span>
+    <span class="hljs-attribute">include</span>       mime.types;
+    <span class="hljs-attribute">default_type</span>  application/octet-stream;
+
+    <span class="hljs-comment">#设定日志</span>
+    <span class="hljs-comment">#log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span>
+    <span class="hljs-comment">#                  '$status $body_bytes_sent "$http_referer" '</span>
+    <span class="hljs-comment">#                  '"$http_user_agent" "$http_x_forwarded_for"';</span>
+
+    <span class="hljs-comment">#access_log  logs/access.log  main;</span>
+
+    <span class="hljs-comment">#sendfile 指令指定 nginx 是否调用 sendfile 函数（zero copy 方式）来输出文件，对于普通应用，</span>
+    <span class="hljs-comment">#必须设为 on,如果用来进行下载等应用磁盘IO重负载应用，可设置为 off，以平衡磁盘与网络I/O处理速度，降低系统的uptime.</span>
+    <span class="hljs-attribute">sendfile</span>        <span class="hljs-literal">on</span>;
+    <span class="hljs-comment">#tcp_nopush     on;</span>
+
+    <span class="hljs-comment">#连接超时时间</span>
+    <span class="hljs-comment">#keepalive_timeout  0;</span>
+    <span class="hljs-attribute">keepalive_timeout</span>  <span class="hljs-number">65</span>;
+
+    <span class="hljs-comment">#gzip压缩开关</span>
+    <span class="hljs-comment">#gzip  on;</span>
+
+   <span class="hljs-comment">#设定实际的服务器列表</span>
+    <span class="hljs-section">upstream</span> test{
+        <span class="hljs-comment">#weigth参数表示权值，权值越高被分配到的几率越大</span>
+        <span class="hljs-attribute">server</span>  <span class="hljs-number">127.0.0.1:8080</span> weight=<span class="hljs-number">1</span>;
+        <span class="hljs-attribute">server</span>  <span class="hljs-number">127.0.0.1:8081</span> weight=<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">#HTTP服务器</span>
+    <span class="hljs-section">server</span> {
+        <span class="hljs-comment">#监听80端口，80端口是知名端口号，用于HTTP协议</span>
+        <span class="hljs-attribute">listen</span>       <span class="hljs-number">80</span>;
+
+        <span class="hljs-comment">#定义使用www.xx.com访问</span>
+        <span class="hljs-attribute">server_name</span>  localhost;
+
+        <span class="hljs-comment">#charset koi8-r;</span>
+
+        <span class="hljs-comment">#access_log  logs/host.access.log  main;</span>
+
+        <span class="hljs-section">location</span> / {
+            <span class="hljs-comment">#指向webapp的目录</span>
+            <span class="hljs-comment">#root的处理结果是：root路径＋location路径</span>
+            <span class="hljs-comment">#alias的处理结果是：使用alias路径替换location路径</span>
+            <span class="hljs-attribute">root</span>   html;
+            <span class="hljs-attribute">alias</span>  html;
+            <span class="hljs-comment">#首页</span>
+            <span class="hljs-attribute">index</span>  index.html index.htm;
+            <span class="hljs-comment">#反向代理的路径（和upstream绑定），location 后面设置映射的路径</span>
+            <span class="hljs-attribute">proxy_pass</span>  http://test;
+        }
+
+        <span class="hljs-comment">#error_page  404              /404.html;</span>
+
+        <span class="hljs-comment"># redirect server error pages to the static page /50x.html</span>
+        <span class="hljs-comment">#</span>
+        <span class="hljs-attribute">error_page</span>   <span class="hljs-number">500</span> <span class="hljs-number">502</span> <span class="hljs-number">503</span> <span class="hljs-number">504</span>  /50x.html;
+        <span class="hljs-section">location</span> = /50x.html {
+            <span class="hljs-attribute">root</span>   html;
+        }
+
+        <span class="hljs-comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+        <span class="hljs-comment">#</span>
+        <span class="hljs-comment">#location ~ \.php$ {</span>
+        <span class="hljs-comment">#    proxy_pass   http://127.0.0.1;</span>
+        <span class="hljs-comment">#}</span>
+
+        <span class="hljs-comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+        <span class="hljs-comment">#</span>
+        <span class="hljs-comment">#location ~ \.php$ {</span>
+        <span class="hljs-comment">#    root           html;</span>
+        <span class="hljs-comment">#    fastcgi_pass   127.0.0.1:9000;</span>
+        <span class="hljs-comment">#    fastcgi_index  index.php;</span>
+        <span class="hljs-comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+        <span class="hljs-comment">#    include        fastcgi_params;</span>
+        <span class="hljs-comment">#}</span>
+
+ <span class="hljs-comment">#禁止访问 .htxxx 文件</span>
+        <span class="hljs-comment"># deny access to .htaccess files, if Apache's document root</span>
+        <span class="hljs-comment"># concurs with nginx's one</span>
+        <span class="hljs-comment">#</span>
+        <span class="hljs-comment">#location ~ /\.ht {</span>
+        <span class="hljs-comment">#    deny  all;</span>
+        <span class="hljs-comment">#}</span>
+    }
+
+
+    <span class="hljs-comment"># another virtual host using mix of IP-, name-, and port-based configuration</span>
+    <span class="hljs-comment">#</span>
+    <span class="hljs-comment">#server {</span>
+    <span class="hljs-comment">#    listen       8000;</span>
+    <span class="hljs-comment">#    listen       somename:8080;</span>
+    <span class="hljs-comment">#    server_name  somename  alias  another.alias;</span>
+
+    <span class="hljs-comment">#    location / {</span>
+    <span class="hljs-comment">#        root   html;</span>
+    <span class="hljs-comment">#        index  index.html index.htm;</span>
+    <span class="hljs-comment">#    }</span>
+    <span class="hljs-comment">#}</span>
+
+
+    <span class="hljs-comment"># HTTPS server</span>
+    <span class="hljs-comment">#</span>
+    <span class="hljs-comment">#server {</span>
+    <span class="hljs-comment">#    listen       443 ssl;</span>
+    <span class="hljs-comment">#    server_name  localhost;</span>
+
+    <span class="hljs-comment">#    ssl_certificate      cert.pem;</span>
+    <span class="hljs-comment">#    ssl_certificate_key  cert.key;</span>
+
+    <span class="hljs-comment">#    ssl_session_cache    shared:SSL:1m;</span>
+    <span class="hljs-comment">#    ssl_session_timeout  5m;</span>
+
+    <span class="hljs-comment">#    ssl_ciphers  HIGH:!aNULL:!MD5;</span>
+    <span class="hljs-comment">#    ssl_prefer_server_ciphers  on;</span>
+
+    <span class="hljs-comment">#    location / {</span>
+    <span class="hljs-comment">#        root   html;</span>
+    <span class="hljs-comment">#        index  index.html index.htm;</span>
+    <span class="hljs-comment">#    }</span>
+    <span class="hljs-comment">#}</span>
+
+}
+</code></pre>
+<h2 id="负载均衡策略"><a name="负载均衡策略" class="anchor-navigation-ex-anchor" href="#负载均衡策略"><i class="fa fa-link" aria-hidden="true"></i></a>负载均衡策略</h2>
+<ol>
+<li>轮询</li>
+<li>加权轮询</li>
+<li>最少链接</li>
+<li>加权最少链接</li>
+<li>ip hash </li>
+<li>普通hash </li>
+</ol>
+<h3 id="轮询"><a name="轮询" class="anchor-navigation-ex-anchor" href="#轮询"><i class="fa fa-link" aria-hidden="true"></i></a>轮询</h3>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+  <span class="hljs-comment"># 默认所有服务器权重为 1</span>
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>
+}
+</code></pre>
+<h3 id="加权轮询"><a name="加权轮询" class="anchor-navigation-ex-anchor" href="#加权轮询"><i class="fa fa-link" aria-hidden="true"></i></a>加权轮询</h3>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>   weight=<span class="hljs-number">3</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>              <span class="hljs-comment"># default weight=1</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>              <span class="hljs-comment"># default weight=1</span>
+}
+</code></pre>
+<h3 id="最少链接"><a name="最少链接" class="anchor-navigation-ex-anchor" href="#最少链接"><i class="fa fa-link" aria-hidden="true"></i></a>最少链接</h3>
+<blockquote>
+<p>分配给最少链接的服务器 </p>
+</blockquote>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+  least_conn;
+
+  <span class="hljs-comment"># with default weight for all (weight=1)</span>
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>
+}
+</code></pre>
+<h3 id="加权最少链接"><a name="加权最少链接" class="anchor-navigation-ex-anchor" href="#加权最少链接"><i class="fa fa-link" aria-hidden="true"></i></a>加权最少链接</h3>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+  least_conn;
+
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>   weight=<span class="hljs-number">3</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>              <span class="hljs-comment"># default weight=1</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>              <span class="hljs-comment"># default weight=1</span>
+}
+</code></pre>
+<h3 id="iphash-"><a name="iphash-" class="anchor-navigation-ex-anchor" href="#iphash-"><i class="fa fa-link" aria-hidden="true"></i></a>ip_hash </h3>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+
+  ip_hash;
+
+  <span class="hljs-comment"># with default weight for all (weight=1)</span>
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>
+
+}
+</code></pre>
+<h3 id="普通hash"><a name="普通hash" class="anchor-navigation-ex-anchor" href="#普通hash"><i class="fa fa-link" aria-hidden="true"></i></a>普通hash</h3>
+<pre><code class="lang-nginx"><span class="hljs-section">upstream</span> bck_testing_01 {
+
+  <span class="hljs-attribute">hash</span> <span class="hljs-variable">$request_uri</span>;
+
+  <span class="hljs-comment"># with default weight for all (weight=1)</span>
+  <span class="hljs-attribute">server</span> <span class="hljs-number">192.168.250.220:8080</span>
+  server <span class="hljs-number">192.168.250.221:8080</span>
+  server <span class="hljs-number">192.168.250.222:8080</span>
+
+}
+</code></pre>
+<h2 id="应用"><a name="应用" class="anchor-navigation-ex-anchor" href="#应用"><i class="fa fa-link" aria-hidden="true"></i></a>应用</h2>
+<ol>
+<li>多个webapp配置</li>
+<li>静态站点</li>
+<li>文件服务器</li>
+</ol>
+<h3 id="静态站点"><a name="静态站点" class="anchor-navigation-ex-anchor" href="#静态站点"><i class="fa fa-link" aria-hidden="true"></i></a>静态站点</h3>
+<blockquote>
+<p> html 文件和一堆静态资源</p>
+</blockquote>
+<pre><code class="lang-nginx">  <span class="hljs-section">server</span> {
+        <span class="hljs-attribute">listen</span>       <span class="hljs-number">8090</span>;
+        <span class="hljs-attribute">server_name</span>  localhost;
+
+        <span class="hljs-section">location</span> / {
+            <span class="hljs-attribute">root</span>   C:/Users/<span class="hljs-number">24514</span>/Desktop/nginx/html;
+            <span class="hljs-attribute">index</span>  home.html home.htm;
+        }
+
+        <span class="hljs-attribute">error_page</span>   <span class="hljs-number">500</span> <span class="hljs-number">502</span> <span class="hljs-number">503</span> <span class="hljs-number">504</span>  /50x.html;
+        <span class="hljs-section">location</span> = /50x.html {
+            <span class="hljs-attribute">root</span>   html;
+        }
+
+    }
+</code></pre>
+<h3 id="文件服务器"><a name="文件服务器" class="anchor-navigation-ex-anchor" href="#文件服务器"><i class="fa fa-link" aria-hidden="true"></i></a>文件服务器</h3>
+<p>Nginx 中的配置要点：</p>
+<ul>
+<li>将 autoindex 开启可以显示目录，默认不开启。</li>
+<li>将 autoindex_exact_size 开启可以显示文件的大小。</li>
+<li>将 autoindex_localtime 开启可以显示文件的修改时间。</li>
+<li>root 用来设置开放为文件服务的根路径。</li>
+<li>charset 设置为 <code>charset utf-8,gbk;</code>，可以避免中文乱码问题（windows 服务器下设置后，依然乱码，本人暂时没有找到解决方法）。</li>
+</ul>
+<pre><code class="lang-nginx"><span class="hljs-attribute">autoindex</span> <span class="hljs-literal">on</span>;<span class="hljs-comment"># 显示目录</span>
+<span class="hljs-attribute">autoindex_exact_size</span> <span class="hljs-literal">on</span>;<span class="hljs-comment"># 显示文件大小</span>
+<span class="hljs-attribute">autoindex_localtime</span> <span class="hljs-literal">on</span>;<span class="hljs-comment"># 显示文件时间</span>
+
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">charset</span>      utf-<span class="hljs-number">8</span>,gbk; <span class="hljs-comment"># windows 服务器下设置后，依然乱码，暂时无解</span>
+    <span class="hljs-attribute">listen</span>       <span class="hljs-number">9050</span> default_server;
+    <span class="hljs-attribute">listen</span>       [::]:<span class="hljs-number">9050</span> default_server;
+    <span class="hljs-attribute">server_name</span>  _;
+    <span class="hljs-attribute">root</span>         /share/fs;
+}
+</code></pre>
+<h2 id="vscode-配置"><a name="vscode-配置" class="anchor-navigation-ex-anchor" href="#vscode-配置"><i class="fa fa-link" aria-hidden="true"></i></a>vscode 配置</h2>
+<p><a href="nginx获取用户真实ip-/nginx获取用户真实ip-.md" title="nginx获取用户真实ip ">nginx获取用户真实ip </a></p>
+<p><a href="高级nginx/高级nginx.md" title="高级nginx">高级nginx</a></p>
+<footer class="page-footer"><span class="copyright">©2025 瑾语 all right reserved，powered by Gitbook</span><span class="footer-modification">该文档修订时间：
+2025-04-07 10:02:41
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../git/git.html" class="navigation navigation-prev " aria-label="Previous page: git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../前端/前端.html" class="navigation navigation-next " aria-label="Next page: 前端">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"nginx","level":"1.3.5","depth":2,"next":{"title":"前端","level":"1.4","depth":1,"path":"doc/前端/前端.md","ref":"doc/前端/前端.md","articles":[{"title":"html","level":"1.4.1","depth":2,"path":"doc/前端/html/html.md","ref":"doc/前端/html/html.md","articles":[]},{"title":"css","level":"1.4.2","depth":2,"path":"doc/前端/css/css.md","ref":"doc/前端/css/css.md","articles":[]},{"title":"js","level":"1.4.3","depth":2,"path":"doc/前端/js/js.md","ref":"doc/前端/js/js.md","articles":[]},{"title":"ts","level":"1.4.4","depth":2,"path":"doc/前端/ts/ts.md","ref":"doc/前端/ts/ts.md","articles":[]},{"title":"vue","level":"1.4.5","depth":2,"path":"doc/前端/vue/vue.md","ref":"doc/前端/vue/vue.md","articles":[]},{"title":"项目工程","level":"1.4.6","depth":2,"path":"doc/前端/项目工程/项目工程.md","ref":"doc/前端/项目工程/项目工程.md","articles":[]},{"title":"element","level":"1.4.7","depth":2,"path":"doc/前端/element/element.md","ref":"doc/前端/element/element.md","articles":[]}]},"previous":{"title":"git","level":"1.3.4","depth":2,"path":"doc/后端/git/git.md","ref":"doc/后端/git/git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","chapter-fold","get-pdf","code","search-pro","tbfed-pagefooter","flexible-alerts","anchor-navigation-ex","github","todo","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2025 瑾语","modify_label":"该文档修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/yaoyoutain"},"livereload":{},"todo":{},"search-pro":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"isRewritePageTitle":true,"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"expandable-chapters-small":{},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"get-pdf":{"prefix":"book","label":"下载 PDF","base":"/summary/assets"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的文档","language":"zh-hans","gitbook":"*","description":""},"file":{"path":"doc/后端/nginx/nginx.md","mtime":"2025-04-07T02:02:41.658Z","type":"markdown"},"gitbook":{"version":"6.0.2","time":"2025-04-07T02:11:23.388Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-get-pdf/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "honkit": "^6.0.2"
+    "honkit": "^6.0.2",
+    "honkit-plugin-todo": "^1.0.0"
   },
   "scripts": {
     "build": "npx honkit build",

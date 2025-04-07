@@ -12,7 +12,8 @@
         "tbfed-pagefooter",
         "flexible-alerts",
         "anchor-navigation-ex",
-        "github"
+        "github",
+        "todo"
     ],
     "pluginsConfig": {
         "get-pdf": {
