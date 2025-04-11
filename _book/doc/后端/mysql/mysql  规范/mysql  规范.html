@@ -1,0 +1,1455 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>mysql  规范 · 我的文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/honkit-plugin-todo/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../mysql 主从搭建/mysql 主从搭建.html" />
+    
+    
+    <link rel="prev" href="../sql优化/sql优化.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../honkit/安装.html">
+            
+                <a href="../../../honkit/安装.html">
+            
+                    
+                    honkit安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../honkit/插件.html">
+            
+                <a href="../../../honkit/插件.html">
+            
+                    
+                    honkit插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../honkit/插件使用.html">
+            
+                <a href="../../../honkit/插件使用.html">
+            
+                    
+                    honkit插件使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mysql.html">
+            
+                <a href="../mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mysql 初步安装/mysql 初步安装.html">
+            
+                <a href="../mysql 初步安装/mysql 初步安装.html">
+            
+                    
+                    mysql 初步安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../DML 数据库操作语言/DML 数据库操作语言.html">
+            
+                <a href="../DML 数据库操作语言/DML 数据库操作语言.html">
+            
+                    
+                    DML 数据库操作语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../DDL 数据定义语言/DDL 数据定义语言.html">
+            
+                <a href="../DDL 数据定义语言/DDL 数据定义语言.html">
+            
+                    
+                    DDL 数据定义语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../DQL 数据库查询语言/DQL 数据库查询语言.html">
+            
+                <a href="../DQL 数据库查询语言/DQL 数据库查询语言.html">
+            
+                    
+                    DQL 数据库查询语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../DCL 数据控制语言/DCL 数据控制语言.html">
+            
+                <a href="../DCL 数据控制语言/DCL 数据控制语言.html">
+            
+                    
+                    DCL 数据控制语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../函数/函数.html">
+            
+                <a href="../函数/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../mysql 数据类型/mysql 数据类型.html">
+            
+                <a href="../mysql 数据类型/mysql 数据类型.html">
+            
+                    
+                    mysql 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../约束/约束.html">
+            
+                <a href="../约束/约束.html">
+            
+                    
+                    约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../事务/事务.html">
+            
+                <a href="../事务/事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../存储引擎/存储引擎.html">
+            
+                <a href="../存储引擎/存储引擎.html">
+            
+                    
+                    存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../索引/索引.html">
+            
+                <a href="../索引/索引.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../sql优化/sql优化.html">
+            
+                <a href="../sql优化/sql优化.html">
+            
+                    
+                    sql优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.13" data-path="mysql  规范.html">
+            
+                <a href="mysql  规范.html">
+            
+                    
+                    mysql  规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../mysql 主从搭建/mysql 主从搭建.html">
+            
+                <a href="../mysql 主从搭建/mysql 主从搭建.html">
+            
+                    
+                    mysql 主从搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../git/git.html">
+            
+                <a href="../../git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../nginx/nginx.html">
+            
+                <a href="../../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../nginx/nginx获取用户真实ip-/nginx获取用户真实ip-.html">
+            
+                <a href="../../nginx/nginx获取用户真实ip-/nginx获取用户真实ip-.html">
+            
+                    
+                    nginx获取用户真实ip 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../nginx/高级nginx/高级nginx.html">
+            
+                <a href="../../nginx/高级nginx/高级nginx.html">
+            
+                    
+                    高级nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../go/go.html">
+            
+                <a href="../../go/go.html">
+            
+                    
+                    go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../go/入门/入门.html">
+            
+                <a href="../../go/入门/入门.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../go/基础知识点/基础知识点.html">
+            
+                <a href="../../go/基础知识点/基础知识点.html">
+            
+                    
+                    基础知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../go/技巧/技巧.html">
+            
+                <a href="../../go/技巧/技巧.html">
+            
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../go/IO/IO.html">
+            
+                <a href="../../go/IO/IO.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../go/os/os.html">
+            
+                <a href="../../go/os/os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../go/gc工作原理/gc工作原理.html">
+            
+                <a href="../../go/gc工作原理/gc工作原理.html">
+            
+                    
+                    gc工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../go/database/database.html">
+            
+                <a href="../../go/database/database.html">
+            
+                    
+                    database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../liunx/liunx.html">
+            
+                <a href="../../liunx/liunx.html">
+            
+                    
+                    liunx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../liunx/挂载硬盘/挂载硬盘.html">
+            
+                <a href="../../liunx/挂载硬盘/挂载硬盘.html">
+            
+                    
+                    挂载硬盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../liunx/liunx 账号远程登录相关问题-/liunx 账号远程登录相关问题-.html">
+            
+                <a href="../../liunx/liunx 账号远程登录相关问题-/liunx 账号远程登录相关问题-.html">
+            
+                    
+                    liunx 账号远程登录相关问题 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../liunx/ssh/ssh.html">
+            
+                <a href="../../liunx/ssh/ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../liunx/更换源，更新软件包/更换源，更新软件包.html">
+            
+                <a href="../../liunx/更换源，更新软件包/更换源，更新软件包.html">
+            
+                    
+                    更换源，更新软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../liunx/ssh 链接/ssh 链接.html">
+            
+                <a href="../../liunx/ssh 链接/ssh 链接.html">
+            
+                    
+                    ssh 链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../前端/前端.html">
+            
+                <a href="../../../前端/前端.html">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../前端/html/html.html">
+            
+                <a href="../../../前端/html/html.html">
+            
+                    
+                    html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../前端/css/css.html">
+            
+                <a href="../../../前端/css/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../前端/js/js.html">
+            
+                <a href="../../../前端/js/js.html">
+            
+                    
+                    js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../前端/ts/ts.html">
+            
+                <a href="../../../前端/ts/ts.html">
+            
+                    
+                    ts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../前端/vue/vue.html">
+            
+                <a href="../../../前端/vue/vue.html">
+            
+                    
+                    vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../前端/vue/脚手架/脚手架.html">
+            
+                <a href="../../../前端/vue/脚手架/脚手架.html">
+            
+                    
+                    脚手架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../前端/vue/模板语法-/模板语法-.html">
+            
+                <a href="../../../前端/vue/模板语法-/模板语法-.html">
+            
+                    
+                    模板语法 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../../前端/vue/响应式/响应式.html">
+            
+                <a href="../../../前端/vue/响应式/响应式.html">
+            
+                    
+                    响应式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../../前端/vue/方法/方法.html">
+            
+                <a href="../../../前端/vue/方法/方法.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../../前端/vue/生命周期/生命周期.html">
+            
+                <a href="../../../前端/vue/生命周期/生命周期.html">
+            
+                    
+                    生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../../前端/vue/组件传参/组件传参.html">
+            
+                <a href="../../../前端/vue/组件传参/组件传参.html">
+            
+                    
+                    组件传参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../../前端/vue/组件/组件.html">
+            
+                <a href="../../../前端/vue/组件/组件.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../../前端/vue/sort插槽/sort插槽.html">
+            
+                <a href="../../../前端/vue/sort插槽/sort插槽.html">
+            
+                    
+                    sort插槽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../../../前端/vue/依赖注入provide inject/依赖注入provide inject.html">
+            
+                <a href="../../../前端/vue/依赖注入provide inject/依赖注入provide inject.html">
+            
+                    
+                    依赖注入provide inject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../../../前端/vue/v-model/v-model.html">
+            
+                <a href="../../../前端/vue/v-model/v-model.html">
+            
+                    
+                    v-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../../../前端/vue/自定义命令/自定义命令.html">
+            
+                <a href="../../../前端/vue/自定义命令/自定义命令.html">
+            
+                    
+                    自定义命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../../../前端/vue/自定义hook/自定义hook.html">
+            
+                <a href="../../../前端/vue/自定义hook/自定义hook.html">
+            
+                    
+                    自定义hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../../../前端/vue/UI/UI.html">
+            
+                <a href="../../../前端/vue/UI/UI.html">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../../../前端/vue/样式scoped/样式scoped.html">
+            
+                <a href="../../../前端/vue/样式scoped/样式scoped.html">
+            
+                    
+                    样式scoped
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../../../前端/vue/unoCss原子化/unoCss原子化.html">
+            
+                <a href="../../../前端/vue/unoCss原子化/unoCss原子化.html">
+            
+                    
+                    unoCss原子化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16" data-path="../../../前端/项目工程/项目工程.html">
+            
+                <a href="../../../前端/项目工程/项目工程.html">
+            
+                    
+                    vue项目工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.16.1" data-path="../../../前端/项目工程/vite/vite.html">
+            
+                <a href="../../../前端/项目工程/vite/vite.html">
+            
+                    
+                    vite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.2" data-path="../../../前端/项目工程/vue router/vue router.html">
+            
+                <a href="../../../前端/项目工程/vue router/vue router.html">
+            
+                    
+                    vue router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.3" data-path="../../../前端/项目工程/css reset/css reset.html">
+            
+                <a href="../../../前端/项目工程/css reset/css reset.html">
+            
+                    
+                    css reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.4" data-path="../../../前端/项目工程/vite @ 别名/vite @ 别名.html">
+            
+                <a href="../../../前端/项目工程/vite @ 别名/vite @ 别名.html">
+            
+                    
+                    vite @ 别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.5" data-path="../../../前端/项目工程/自动引入组件/自动引入组件.html">
+            
+                <a href="../../../前端/项目工程/自动引入组件/自动引入组件.html">
+            
+                    
+                    自动引入组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.6" data-path="../../../前端/项目工程/pinia/pinia.html">
+            
+                <a href="../../../前端/项目工程/pinia/pinia.html">
+            
+                    
+                    pinia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.7" data-path="../../../前端/项目工程/vue 环境配置/vue 环境配置.html">
+            
+                <a href="../../../前端/项目工程/vue 环境配置/vue 环境配置.html">
+            
+                    
+                    vue 环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.8" data-path="../../../前端/项目工程/axios/axios.html">
+            
+                <a href="../../../前端/项目工程/axios/axios.html">
+            
+                    
+                    axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.9" data-path="../../../前端/项目工程/定义全局变量和函数/定义全局变量和函数.html">
+            
+                <a href="../../../前端/项目工程/定义全局变量和函数/定义全局变量和函数.html">
+            
+                    
+                    定义全局变量和函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.10" data-path="../../../前端/项目工程/mock/mock.html">
+            
+                <a href="../../../前端/项目工程/mock/mock.html">
+            
+                    
+                    mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.11" data-path="../../../前端/项目工程/tailwindcss/tailwindcss.html">
+            
+                <a href="../../../前端/项目工程/tailwindcss/tailwindcss.html">
+            
+                    
+                    tailwindcss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16.12" data-path="../../../前端/项目工程/svg/svg.html">
+            
+                <a href="../../../前端/项目工程/svg/svg.html">
+            
+                    
+                    svg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.17" data-path="../../../前端/element/element.html">
+            
+                <a href="../../../前端/element/element.html">
+            
+                    
+                    vue element
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.17.1" data-path="../../../前端/element/el-popover 点击其他区域关闭弹出框/el-popover 点击其他区域关闭弹出框.html">
+            
+                <a href="../../../前端/element/el-popover 点击其他区域关闭弹出框/el-popover 点击其他区域关闭弹出框.html">
+            
+                    
+                    el-popover 点击其他区域关闭弹出框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.17.2" data-path="../../../前端/element/el-table宽度无法自适应/el-table宽度无法自适应.html">
+            
+                <a href="../../../前端/element/el-table宽度无法自适应/el-table宽度无法自适应.html">
+            
+                    
+                    el-table宽度无法自适应
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >mysql  规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mysql--规范"><b></b>mysql  规范</a></li><ul><li><span class="title-icon "></span><a href="#目录"><b></b>目录</a></li></ul><li><span class="title-icon "></span><a href="#数据库命名"><b></b>数据库命名</a></li><li><span class="title-icon "></span><a href="#表命名"><b></b>表命名</a></li><li><span class="title-icon "></span><a href="#字段命名"><b></b>字段命名</a></li><li><span class="title-icon "></span><a href="#索引命名"><b></b>索引命名</a></li><li><span class="title-icon "></span><a href="#视图"><b></b>视图</a></li><li><span class="title-icon "></span><a href="#表设计规范"><b></b>表设计规范</a></li><li><span class="title-icon "></span><a href="#索引设计规范"><b></b>索引设计规范</a></li></ul></div><a href="#mysql--规范" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mysql--规范"><a name="mysql--规范" class="anchor-navigation-ex-anchor" href="#mysql--规范"><i class="fa fa-link" aria-hidden="true"></i></a>mysql  规范</h1>
+<h2 id="目录"><a name="目录" class="anchor-navigation-ex-anchor" href="#目录"><i class="fa fa-link" aria-hidden="true"></i></a>目录</h2>
+<ul>
+<li><a href="#数据库命名">数据库命名</a></li>
+<li><a href="#表命名">表命名</a></li>
+<li><a href="#字段命名">字段命名</a></li>
+<li><a href="#索引命名">索引命名</a></li>
+<li><a href="#视图">视图</a></li>
+<li><a href="#表设计规范">表设计规范</a></li>
+<li><a href="#索引设计规范">索引设计规范</a></li>
+</ul>
+<p><a href="https://mp.weixin.qq.com/s/vCF8zTB8acZj-k8jrlsM8Q" title=" 公司用的 MySQL 团队开发规范，太详细了，建议收藏！  https://mp.weixin.qq.com/s/vCF8zTB8acZj-k8jrlsM8Q" target="_blank"> 公司用的 MySQL 团队开发规范，太详细了，建议收藏！  https://mp.weixin.qq.com/s/vCF8zTB8acZj-k8jrlsM8Q</a></p>
+<h1 id="数据库命名"><a name="数据库命名" class="anchor-navigation-ex-anchor" href="#数据库命名"><i class="fa fa-link" aria-hidden="true"></i></a>数据库命名</h1>
+<ul>
+<li>数据库命名一般为项目名称+代表库含义的简写，比如IM项目的工作流数据库，可以是 im_flow。</li>
+<li>命名应使用小写</li>
+</ul>
+<h1 id="表命名"><a name="表命名" class="anchor-navigation-ex-anchor" href="#表命名"><i class="fa fa-link" aria-hidden="true"></i></a>表命名</h1>
+<ul>
+<li>常规表表名以t_开头，t代表table的意思，命名规则即 t + 模块（包含模块含义的简写）+ 表（包含表含义的简写），比如用户模块的教育信息表：t_user_eduinfo。</li>
+<li>临时表（RD、QA或DBA同学用于数据临时处理的表），命名规则：temp前缀+模块+表+日期后缀：temp_user_eduinfo_20210719。</li>
+<li>备份表（用于保存和归档历史数据或者作为灾备恢复的数据）命名规则，bak前缀+模块+表+日期后缀：bak_user_eduinfo_20210719。</li>
+<li>同一个模块的表尽可能使用相同的前缀，表名称尽可能表达含义。</li>
+<li>多个单词以下划线 _ 分隔。</li>
+<li>常规表表名尽量不超过30个字符，temp表和bak表视情况而定，也尽量简短为宜，命名应使用小写。</li>
+</ul>
+<h1 id="字段命名"><a name="字段命名" class="anchor-navigation-ex-anchor" href="#字段命名"><i class="fa fa-link" aria-hidden="true"></i></a>字段命名</h1>
+<ul>
+<li>字段命名需要表示其实际含义的英文单词或简写，单词之间用下划线 _ 进行连接，如 service_ip、service_port。</li>
+<li>各表之间相同意义的字段必须同名，比如a表和b表都有创建时间，应该统一为create_time，不一致会很混乱。</li>
+<li>多个单词以下划线 _ 分隔</li>
+<li>字段名尽量不超过30个字符，命名应该使用小写</li>
+</ul>
+<h1 id="索引命名"><a name="索引命名" class="anchor-navigation-ex-anchor" href="#索引命名"><i class="fa fa-link" aria-hidden="true"></i></a>索引命名</h1>
+<ul>
+<li>唯一<a href="http://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==\&amp;mid=2247487492\&amp;idx=2\&amp;sn=319be0c2fdd5a89c9464c9f2775ed551\&amp;chksm=e91b7518de6cfc0ec75c032b1bdb9b6fe90c505d543c2b45c6d021accd72a8127e6f6b54ec1b\&amp;scene=21#wechat_redirect" title="索引" target="_blank">索引</a>使用uni + 字段名 来命名：<code>create unique index uni_uid on t_user_basic(uid)</code> 。</li>
+<li>非唯一索引使用idx + 字段名 来命名：<code>create index idx_uname_mobile on t_user_basic(uname,mobile)</code> 。</li>
+<li>多个单词以下划线 _ 分隔。</li>
+<li>索引名尽量不超过50个字符，命名应该使用小写，组合索引的字段不宜太多，不然也不利于查询效率的提升。</li>
+<li>多单词组成的列名，取尽可能代表意义的缩写，如 test_contact表member_id和friend_id上的组合索引：idx_mid_fid。</li>
+<li>理解组合索引最左前缀原则，避免重复建设索引，如果建立了(a,b,c)，相当于建立了(a), (a,b), (a,b,c)。</li>
+</ul>
+<h1 id="视图"><a name="视图" class="anchor-navigation-ex-anchor" href="#视图"><i class="fa fa-link" aria-hidden="true"></i></a>视图</h1>
+<ul>
+<li>视图名以v开头，表示view，完整结构是v+视图内容含义缩写。</li>
+<li>如果视图只来源单个表，则为v+表名。如果视图由几个表关联产生就用v+下划线（ _）连接几个表名，视图名尽量不超过30个字符。如超过30个字符则取简写。</li>
+<li>如无特殊需要，严禁开发人员创建视图。</li>
+<li>命名应使用小写。</li>
+</ul>
+<h1 id="表设计规范"><a name="表设计规范" class="anchor-navigation-ex-anchor" href="#表设计规范"><i class="fa fa-link" aria-hidden="true"></i></a>表设计规范</h1>
+<ul>
+<li>不允许使用外键对表之间进行关联： 不同应用间所对应的数据库表之间的关联应尽可能减少，不允许使用外键对表之间进行关联，确保组件对应的表之间的独立性，为系统或表结构的重构提供可能性。目前业内的做法一般 由程序控制参照完整性。</li>
+<li>需要join的字段(连接键)，数据类型必须保持绝对一致，避免隐式转换。比如关联的字段都是int类型。</li>
+<li>TEXT字段作为大体量文本存储，必须放在独立的表中 , 用PK与主表关联。如无特殊需要，禁止使用TEXT、BLOB字段。</li>
+<li>设计应至少满足第三范式,尽量减少数据冗余。一些特殊场景允许反范式化设计，但在项目评审时需要对冗余字段的设计给出解释。</li>
+<li>需要定期删除(或者转移)过期数据的表，通过分表解决，我们的做法是按照2/8法则将操作频率较低的历史数据迁移到历史表中，按照时间或者则曾Id做切割点。</li>
+<li>单表字段数不要太多，建议最多不要大于50个。过度的宽表对性能也是很大的影响。</li>
+<li>表必须要有PK，主键的优势是唯一标识、有效引用、高效检索，所以一般情况下尽量有主键字段。</li>
+<li>一个字段只表示一个含义。</li>
+<li>表不应该有重复列。</li>
+<li>禁止使用复杂数据类型(数组,自定义等)，Json类型的使用视情况而定。</li>
+<li>MySQL在处理大表时，性能就开始明显降低，所以建议单表物理大小限制在16GB，表中数据行数控制在2000W内。</li>
+<li>如果数据量或数据增长在前期规划时就较大，那么在设计评审时就应加入分表策略，数据拆分的做法：垂直拆分、水平拆分；</li>
+<li>无特殊需求，严禁使用分区表</li>
+</ul>
+<h1 id="索引设计规范"><a name="索引设计规范" class="anchor-navigation-ex-anchor" href="#索引设计规范"><i class="fa fa-link" aria-hidden="true"></i></a>索引设计规范</h1>
+<ul>
+<li><p>索引区分度</p>
+<p>索引必须创建在索引选择性（区分度）较高的列上，选择性的计算方式为:  <code>selecttivity = count(distinct c_name)/count(*) ;</code>如果区分度结果小于0.2，则不建议在此列上创建索引，否则大概率会拖慢SQL执行</p>
+</li>
+<li>遵循最左前缀<ul>
+<li>对于确定需要组成组合索引的多个字段，设计时建议将选择性高的字段靠前放。使用时，组合索引的首字段，必须在where条件中，且需要按照最左前缀规则去匹配。</li>
+</ul>
+</li>
+<li>Text类型字段如果需要创建索引，必须使用前缀索引</li>
+<li>单张表的索引数量理论上应控制在5个以内。经常有大批量插入、更新操作表，应尽量少建索引，索引建立的原则理论上是多读少写的场景。</li>
+<li>ORDER BY，GROUP BY，DISTINCT的字段需要添加在索引的后面，形成覆盖索引</li>
+<li>正确理解和计算索引字段的区分度，文中有计算规则，区分度高的索引，可以快速得定位数据，区分度太低，无法有效的利用索引，可能需要扫描大量数据页，和不使用索引没什么差别。</li>
+<li>正确理解和计算前缀索引的字段长度，文中有判断规则，合适的长度要保证高的区分度和最恰当的索引存储容量，只有达到最佳状态，才是保证高效率的索引。</li>
+<li><p>联合索引注意最左匹配原则：必须按照从左到右的顺序匹配，MySQL会一直向右匹配索引直到遇到范围查询(&gt;、&lt;、between、like)然后停止匹配。</p>
+<p>如：depno=1 and empname&gt;'' and job=1 如果建立(depno,empname,job)顺序的索引，job是用不到索引的。</p>
+</li>
+<li>应需而取策略，查询记录的时候，不要一上来就使用 *，只取需要的数据，可能的话尽量只利用索引覆盖，可以减少回表操作，提升效率。</li>
+<li>正确判断是否使用联合索引（上面联合索引的使用那一小节有说明判断规则），也可以进一步分析到索引下推（IPC），减少回表操作，提升效率。</li>
+<li>避免索引失效的原则：禁止对索引字段使用函数、运算符操作，会使索引失效。这是实际上就是需要保证索引所对应字段的”干净度“。</li>
+<li>模糊查询'%value%'会使索引无效，变为全表扫描，因为无法判断扫描的区间，但是'value%'是可以有效利用索引。</li>
+<li>索引覆盖排序字段，这样可以减少排序步骤，提升查询效率</li>
+<li>尽量的扩展索引，非必要不新建索引。比如表中已经有a的索引，现在要加(a,b)的索引，那么只需要修改原来的索引即可。</li>
+</ul>
+<p>举例子：比如一个品牌表，建立的的索引如下，一个主键索引，一个唯一索引</p>
+<p>PRIMARY KEY (<code>id</code>),UNIQUE KEY <code>uni_brand_define</code> (<code>app_id</code>,<code>define_id</code>)</p>
+<p>当你同事业务代码中的检索语句如下的时候，应该立即警告了，即没有覆盖索引，也没按照最左前缀原则：</p>
+<p>select brand_id,brand_name from  ds_brand_system where status=?  and define_id=?  and app_id=?</p>
+<p>建议改成如下：</p>
+<p>select brand_id,brand_name from  ds_brand_system where app_id=? and define_id=?  and  status=?</p>
+<footer class="page-footer"><span class="copyright">©2025 瑾语 all right reserved，powered by Gitbook</span><span class="footer-modification">该文档修订时间：
+2025-04-07 10:02:41
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../sql优化/sql优化.html" class="navigation navigation-prev " aria-label="Previous page: sql优化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../mysql 主从搭建/mysql 主从搭建.html" class="navigation navigation-next " aria-label="Next page: mysql 主从搭建">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mysql  规范","level":"1.3.13","depth":2,"next":{"title":"mysql 主从搭建","level":"1.3.14","depth":2,"path":"doc/后端/mysql/mysql 主从搭建/mysql 主从搭建.md","ref":"doc/后端/mysql/mysql 主从搭建/mysql 主从搭建.md","articles":[]},"previous":{"title":"sql优化","level":"1.3.12","depth":2,"path":"doc/后端/mysql/sql优化/sql优化.md","ref":"doc/后端/mysql/sql优化/sql优化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","chapter-fold","get-pdf","code","search-pro","tbfed-pagefooter","flexible-alerts","anchor-navigation-ex","github","todo","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2025 瑾语","modify_label":"该文档修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/yaoyoutain"},"livereload":{},"todo":{},"search-pro":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"expandable-chapters-small":{},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"get-pdf":{"prefix":"book","label":"下载 PDF","base":"/summary/assets"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的文档","language":"zh-hans","gitbook":"*","description":""},"file":{"path":"doc/后端/mysql/mysql  规范/mysql  规范.md","mtime":"2025-04-07T02:02:41.230Z","type":"markdown"},"gitbook":{"version":"6.0.2","time":"2025-04-11T03:34:00.111Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-get-pdf/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -36,17 +36,3 @@
 4. redis ,etcd
 5. docker&#x20;
 6. grpc
-
-[技巧](技巧/技巧.md "技巧")
-
-[基础知识点](基础知识点/基础知识点.md "基础知识点")
-
-[IO](IO/IO.md "IO")
-
-[os](os/os.md "os")
-
-[gc工作原理](gc工作原理/gc工作原理.md "gc工作原理")
-
-[database](database/database.md "database")
-
-[入门](入门/入门.md "入门")

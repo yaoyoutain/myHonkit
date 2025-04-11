@@ -481,9 +481,3 @@ server {
 }
 ```
 
-
-## vscode 配置
-
-[nginx获取用户真实ip ](nginx获取用户真实ip-/nginx获取用户真实ip-.md "nginx获取用户真实ip ")
-
-[高级nginx](高级nginx/高级nginx.md "高级nginx")

@@ -10,6 +10,7 @@
     "pdf": "npx honkit pdf"
   },
   "dependencies": {
+    "@honkit/honkit-plugin-highlight": "^6.0.2",
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-code": "^0.1.0",

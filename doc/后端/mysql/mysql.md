@@ -25,36 +25,3 @@
 
 > 缺点:    数据时效性没有这么强。&#x20;
 
-## 其他
-
-[mysql 初步安装](<mysql 初步安装/mysql 初步安装.md> "mysql 初步安装")
-
-[msyql 命令](<msyql 命令/msyql 命令.md> "msyql 命令")
-
-[DML 数据库操作语言](<DML 数据库操作语言/DML 数据库操作语言.md> "DML 数据库操作语言")
-
-[DDL 数据定义语言](<DDL 数据定义语言/DDL 数据定义语言.md> "DDL 数据定义语言")
-
-[DQL 数据库查询语言](<DQL 数据库查询语言/DQL 数据库查询语言.md> "DQL 数据库查询语言")
-
-[DCL 数据控制语言](<DCL 数据控制语言/DCL 数据控制语言.md> "DCL 数据控制语言")
-
-[函数](函数/函数.md "函数")
-
-[mysql 数据类型](<mysql 数据类型/mysql 数据类型.md> "mysql 数据类型")
-
-[约束](约束/约束.md "约束")
-
-[事务](事务/事务.md "事务")
-
-## 其他
-
-[存储引擎](存储引擎/存储引擎.md "存储引擎")
-
-[索引](索引/索引.md "索引")
-
-[sql优化](sql优化/sql优化.md "sql优化")
-
-[mysql  规范](<mysql  规范/mysql  规范.md> "mysql  规范")
-
-[mysql 主从搭建](<mysql 主从搭建/mysql 主从搭建.md> "mysql 主从搭建")
